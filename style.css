@@ -162,9 +162,9 @@ input:checked~.bubble::after {
     font-size: 1.125rem;
     padding: 1rem 1.5rem;
     color: #fff;
-    background-color: var(--primary);
+    background-color: var(--business);
     border-radius: 0.5rem;
-    box-shadow: var(--personal-glow);
+    box-shadow: var(--business-glow);
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -236,4 +236,16 @@ input:checked~.bubble::after {
 .todo-item.done .todo-content input {
     text-decoration: line-through;
     color: var(--grey);
+}
+
+@media screen and (min-width:998px) {
+    .app {
+        max-width: 500px;
+        background-color: rgb(178, 214, 106);
+        box-shadow: var(--shadow);
+        margin: 0 auto;
+        padding: 1rem;
+        margin-top: 5rem;
+        border-radius: 1rem;
+    }
 }
